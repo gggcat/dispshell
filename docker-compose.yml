@@ -9,4 +9,11 @@ services:
     tty: true
     volumes:
       - ./local:/root/local
-
+  mine:
+    container_name: dispshell-mine
+    build:
+      context: .
+      dockerfile: dispshell-mine.Dockerfile
+      args:
+        USERNAME: ${USERNAME}
+    tty: true
