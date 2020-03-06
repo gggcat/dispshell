@@ -2,4 +2,4 @@
 
 ## About
 
-This is immutable and  DISPosable SHELL Container
+This is immutable and DISPosable SHELL container.
