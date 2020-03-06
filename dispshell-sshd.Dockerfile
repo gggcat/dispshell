@@ -1,4 +1,4 @@
-FROM zzzcat/dispshell
+FROM zzzcat/dispshell:python3
 
 #
 # Make login user

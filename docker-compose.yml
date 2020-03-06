@@ -27,3 +27,11 @@ services:
     tty: true
     ports:
       - "10022:22"
+  node:
+    container_name: dispshell-node
+    build:
+      context: .
+      dockerfile: dispshell-node.Dockerfile
+    tty: true
+    volumes:
+      - ./local:/root/local
