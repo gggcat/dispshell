@@ -17,3 +17,13 @@ services:
       args:
         USERNAME: ${USERNAME}
     tty: true
+  sshd:
+    container_name: dispshell-sshd
+    build:
+      context: .
+      dockerfile: dispshell-sshd.Dockerfile
+      args:
+        USERNAME: ${USERNAME}
+    tty: true
+    ports:
+      - "10022:22"
