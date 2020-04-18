@@ -35,3 +35,11 @@ services:
     tty: true
     volumes:
       - ./local:/root/local
+  dood:
+    container_name: dispshell-dood
+    build:
+      context: .
+      dockerfile: dispshell-dood.Dockerfile
+    tty: true
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
