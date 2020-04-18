@@ -25,3 +25,8 @@ This is immutable and DISPosable SHELL container.
 
 1. docker-compose build node
 1. docker-compose run node
+
+## dood - dispshell docker outside of docker
+
+1. docker-compose build dood
+1. docker-compose run dood
